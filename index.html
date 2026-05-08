@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- ===== META: 基本設定 ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO: meta基本設定 ===== -->
+    <title>Bit浜海水浴場｜富山県の美しい海で最高の夏を！7月1日海開き</title>
+    <meta name="description" content="富山県富山市三ケにあるBit浜海水浴場。7月1日から9月上旬までオープン。毎日出店する屋台や美しい景観が魅力です。家族や友人と最高の夏を過ごしませんか？">
+    <meta name="keywords" content="Bit浜,海水浴場,富山県,海開き,夏休み,かき氷,焼きそば,富山観光">
+    <meta name="author" content="Bit浜海水浴場運営事務局">
+    <link rel="canonical" href="https://bit-hama.example.com/">
+
+    <!-- ===== SEO: OGP (SNS共有用) ===== -->
+    <meta property="og:title" content="Bit浜海水浴場｜7月1日海開き！富山で過ごす最高の夏">
+    <meta property="og:description" content="富山県富山市三ケのBit浜海水浴場。9時から17時まで営業中。美味しい屋台グルメと透き通る海があなたを待っています。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bit-hama.example.com/">
+    <meta property="og:image" content="https://muraimuneaki.net/urayama/images/rec/62.jpg">
+    <meta property="og:site_name" content="Bit浜海水浴場">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bit浜海水浴場｜7月1日海開き！富山で過ごす最高の夏">
+    <meta name="twitter:description" content="富山県富山市三ケのBit浜海水浴場。9時から17時まで営業中。美味しい屋台グルメと透き通る海があなたを待っています。">
+
+    <!-- ===== SEO: 構造化データ (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Beach",
+      "name": "Bit浜海水浴場",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "三ケ576",
+        "addressLocality": "富山市",
+        "addressRegion": "富山県",
+        "addressCountry": "JP"
+      },
+      "openingHours": "09:00-17:00",
+      "description": "富山県富山市の美しい海水浴場。7月から9月上旬まで営業。"
+    }
+    </script>
+
+    <!-- ===== STYLE: CSS変数定義 ===== -->
+    <style>
+        :root {
+            --color-primary: #1e88e5;
+            --color-secondary: #00acc1;
+            --color-dark: #1a2b3c;
+            --color-text: #4a6580;
+            --bg-body: #f4f8fc;
+            --bg-section-alt: #e8f4fd;
+            --shadow: 0 10px 30px rgba(30, 136, 229, 0.15);
+            --radius: 10px;
+        }
+
+        /* ===== STYLE: リセット・共通 ===== */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Helvetica Neue', Arial, 'Yu Gothic', sans-serif; background-color: var(--bg-body); color: var(--color-text); line-height: 1.8; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3 { color: var(--color-dark); font-weight: 700; }
+        .btn { display: inline-block; padding: 18px 45px; background: var(--color-primary); color: #fff; border-radius: var(--radius); font-weight: 700; text-decoration: none; transition: all 0.3s ease; border: none; cursor: pointer; text-align: center; }
+        .btn:hover { background: var(--color-secondary); box-shadow: 0 5px 15px rgba(0,172,193,0.3); }
+
+        /* ===== STYLE: ナビゲーション ===== */
+        header { background: #ffffff; padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+        .nav-links { display: flex; gap: 24px; font-weight: 600; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--color-dark); transition: color 0.3s; }
+        .nav-links a:hover { color: var(--color-primary); }
+        .menu-toggle { display: none; cursor: pointer; font-size: 28px; color: var(--color-dark); }
+
+        /* ===== STYLE: ヒーローセクション ===== */
+        .hero { padding: 160px 20px; text-align: center; color: #fff; background: linear-gradient(135deg, rgba(21,101,192,0.7), rgba(30,136,229,0.7)), url('https://muraimuneaki.net/urayama/images/rec/62.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 25px; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.25rem; margin-bottom: 50px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+
+        /* ===== STYLE: 各セクション共通 ===== */
+        section { padding: 80px 20px; background-color: #ffffff; }
+        .section-alt { background-color: var(--bg-section-alt); }
+        .section-title { text-align: center; margin-bottom: 60px; font-size: 2.5rem; }
+
+        /* ===== STYLE: カード・グリッド ===== */
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+        .card { background: #fff; padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid #eef6fd; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-10px); }
+        .card h3 { margin-bottom: 20px; color: var(--color-primary); }
+
+        /* ===== STYLE: フォーム ===== */
+        .form-container { max-width: 600px; margin: 0 auto; background: #fff; padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); }
+        .form-group { margin-bottom: 25px; }
+        input, textarea { width: 100%; padding: 15px; border: 2px solid #e1e8f0; border-radius: var(--radius); font-size: 1rem; }
+        input:focus, textarea:focus { outline: none; border-color: var(--color-primary); }
+
+        /* ===== STYLE: フッター ===== */
+        footer { background: var(--color-dark); color: #fff; padding: 80px 20px; text-align: center; }
+
+        /* ===== STYLE: レスポンシブ (タブレット) ===== */
+        @media (max-width: 1023px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+            .hero h1 { font-size: 2.8rem; }
+        }
+
+        /* ===== STYLE: レスポンシブ (スマホ) ===== */
+        @media (max-width: 767px) {
+            .nav-links { display: none; position: absolute; top: 75px; left: 0; width: 100%; background: #fff; flex-direction: column; padding: 40px; gap: 20px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+            .nav-links.active { display: flex; }
+            .menu-toggle { display: block; }
+            .grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.8rem; margin-bottom: 40px; }
+            section { padding: 60px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== SECTION: ナビゲーションバー ===== -->
+    <header>
+        <div class="container nav-inner">
+            <div style="font-weight: 800; font-size: 1.6rem; color: var(--color-primary);">Bit浜</div>
+            <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</div>
+            <ul class="nav-links">
+                <li><a href="#about">概要</a></li>
+                <li><a href="#features">特徴</a></li>
+                <li><a href="#services">サービス</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== SECTION: ヒーロー ===== -->
+        <section class="hero">
+            <div class="container">
+                <h1>富山の海で最高の夏を</h1>
+                <p>透き通る青い海、心地よい潮風。7月1日の海開きから、家族や仲間と一生の思い出を作りませんか？</p>
+                <a href="#contact" class="btn">今すぐ詳細を見る</a>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: About / 概要 ===== -->
+        <section id="about" class="section-alt">
+            <div class="container">
+                <h2 class="section-title">Bit浜について</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: var(--color-text);">Bit浜海水浴場は、富山県富山市三ケに位置する屈指の癒やしスポットです。広大な砂浜と穏やかな波が特徴で、小さなお子様から大人まで安心して海水浴を楽しめます。夏休み期間中は多くの家族連れで賑わい、豊かな自然と触れ合う最高の体験を提供します。地元ならではのホスピタリティと、整備された環境が皆様をお待ちしております。</p>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: 特徴・強み ===== -->
+        <section id="features">
+            <div class="container">
+                <h2 class="section-title">Bit浜の魅力</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>屋台村グルメ</h3>
+                        <p>地元食材を使った焼きそばや、ひんやり冷たいかき氷など、ビーチサイドならではの絶品グルメが毎日盛りだくさんです。</p>
+                    </article>
+                    <article class="card">
+                        <h3>安心の施設</h3>
+                        <p>温水シャワー、更衣室、救護所を完備。どなたでも快適にご利用いただけるよう、清潔なメンテナンスを徹底しています。</p>
+                    </article>
+                    <article class="card">
+                        <h3>絶景サンセット</h3>
+                        <p>夕暮れ時には、富山湾が黄金色に染まる幻想的な景色が広がります。カメラ愛好家にも人気のフォトスポットです。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: サービス・コンテンツ詳細 ===== -->
+        <section id="services" class="section-alt">
+            <div class="container">
+                <h2 class="section-title">充実のサービス</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>レンタル用品</h3>
+                        <p>パラソル、浮き輪、ビーチチェアなど、手ぶらで来ても楽しめるよう各種レンタル用品を豊富に取り揃えております。</p>
+                    </article>
+                    <article class="card">
+                        <h3>駐車場完備</h3>
+                        <p>最大200台収容可能な大型駐車場を完備。週末や繁忙期でもスムーズに入場でき、ストレスフリーな海水浴が楽しめます。</p>
+                    </article>
+                    <article class="card">
+                        <h3>監視員常駐</h3>
+                        <p>経験豊富なライフセーバーが毎日巡回。安全管理を最優先に、皆様が心から楽しめる海づくりを徹底しています。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: お問い合わせフォーム ===== -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <div class="form-container">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="お名前" required aria-label="お名前">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="メールアドレス" required aria-label="メールアドレス">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="ご質問やメッセージを入力してください" aria-label="メッセージ"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">送信する</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== SECTION: フッター ===== -->
+    <footer>
+        <div class="container">
+            <p style="margin-bottom: 10px; font-weight: bold; font-size: 1.2rem;">Bit浜海水浴場 運営事務局</p>
+            <p style="margin-bottom: 20px;">富山県富山市三ケ576｜営業時間：9:00 - 17:00</p>
+            <p>&copy; 2024 Bit浜海水浴場 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ===== JS: ハンバーガーメニュー =====
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // ===== JS: スムーススクロール =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+
+        // ===== JS: フォーム送信処理 =====
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('お問い合わせありがとうございます。担当者より折り返しご連絡いたします。');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
